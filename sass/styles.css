@@ -72,12 +72,60 @@
   display: flex;
   gap: 20px;
   margin-bottom: 20px;
+  cursor: pointer;
+}
+.modal .modal-principal .modal-player .option .player {
+  font-size: 50px;
 }
 .modal .modal-principal .modal-player .option .select {
   width: 60px;
 }
-.modal .modal-principal .modal-player .option .player {
+.modal .modal-principal .modal-login {
+  display: none;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 50px;
+}
+.modal .modal-principal .modal-login.active {
+  display: flex;
+}
+.modal .modal-principal .modal-login .input-container {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  flex-direction: column;
+}
+.modal .modal-principal .modal-login .input-container .input {
+  width: 500px;
+  height: 70px;
+  border-radius: 10px;
   font-size: 50px;
+  padding: 15px;
+  outline: none;
+  border: none;
+  background-color: #be8f58;
+  filter: drop-shadow(1px 1px 20px #1A1A1A);
+  font-family: "one-piece", "Times New Roman";
+  margin-top: 30px;
+}
+.modal .modal-principal .modal-login .nivel-container {
+  display: flex;
+  position: relative;
+  width: 700px;
+  cursor: pointer;
+  justify-content: space-between;
+}
+.modal .modal-principal .modal-login .nivel-container .nivel {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+.modal .modal-principal .modal-login .nivel-container .select {
+  width: 50px;
 }
 .modal .modal-principal .hidden {
   display: none;

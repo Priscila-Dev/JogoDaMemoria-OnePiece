@@ -35,7 +35,7 @@
             <img src="/img/zoro.png" alt="Zoro" class="zoro">
             <img src="/img/luffy.png" alt="Luffy" class="luffy">
 
-            <section class="modal-player active" id="modalPlayer"> <!--active-->
+            <section class="modal-player " id="modalPlayer"> <!--active-->
                 <h1 class="text">PRONTO PARA O DESAFIO?</h1>
 
                 <section class="game-menu selected" id="gameMenu">
@@ -52,9 +52,34 @@
                         <span class="multiplayer player" id="multiplayer">MULTIPLAYER</span>
                     </section>
                 </section>
+            </section>
 
+            <section class="modal-login active"> <!--active-->
+                <section class="input-container">
+                    <input type="text" class="input" placeholder="Jogador..." onfocus="true" maxlength="10">
+                    <input type="text" class="input hidden" placeholder="Jogador 2" onfocus="true" maxlength="10">
+                </section>
 
-
+                <section class="nivel-container">
+                    <section class="nivel" id="nivelFacil">
+                        <section class="select">
+                            <img src="/img/caveira.png" alt="Caveira Pirata" class="select">
+                        </section>
+                            <span class="nivel-facil" id="facil">FÁCIL</span>
+                    </section>
+                    <section class="nivel" id="nivelMedio">
+                        <section class="select">
+                            <img src="/img/caveira.png" alt="Caveira Pirata" class="select hidden">
+                        </section>
+                            <span class="nivel-medio" id="medio">MÉDIO</span>
+                    </section>
+                    <section class="nivel" id="nivelDificil">
+                        <section class="select">
+                            <img src="/img/caveira.png" alt="Caveira Pirata" class="select hidden">
+                        </section>
+                            <span class="nivel-dificil" id="dificil">DIFÍCIL</span>
+                    </section>
+                </section>
             </section>
         </section>
     </section>
