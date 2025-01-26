@@ -1,3 +1,88 @@
+.modal {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+}
+.modal.habilitar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal .modal-principal {
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../img/papiro.png");
+  width: 70%;
+  height: 70%;
+  filter: drop-shadow(1px 1px 20px #ebd149);
+  display: none;
+  position: relative;
+}
+.modal .modal-principal.active {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.modal .modal-principal .logo-container {
+  display: flex;
+  margin-top: 120px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.modal .modal-principal .logo-container .logo {
+  width: 550px;
+  filter: drop-shadow(1px 1px 20px #4f6bb2);
+}
+.modal .modal-principal .zoro {
+  position: absolute;
+  width: 270px;
+  left: 150px;
+  filter: drop-shadow(1px 1px 20px #44AF35);
+  bottom: 90px;
+}
+.modal .modal-principal .luffy {
+  position: absolute;
+  width: 310px;
+  right: 150px;
+  filter: drop-shadow(1px 1px 20px #4f6bb2);
+  bottom: 80px;
+}
+.modal .modal-principal .modal-player {
+  display: none;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 50px;
+}
+.modal .modal-principal .modal-player.active {
+  display: flex;
+}
+.modal .modal-principal .modal-player .text {
+  font-size: 60px;
+  margin-top: 20px;
+  filter: drop-shadow(1px 1px 20px #1A1A1A);
+}
+.modal .modal-principal .modal-player .option {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+.modal .modal-principal .modal-player .option .select {
+  width: 60px;
+}
+.modal .modal-principal .modal-player .option .player {
+  font-size: 50px;
+}
+.modal .modal-principal .hidden {
+  display: none;
+}
+
 @font-face {
   font-family: one-piece;
   src: url(/fonts/one\ piece\ font.ttf);
