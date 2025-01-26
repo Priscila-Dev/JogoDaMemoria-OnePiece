@@ -71,7 +71,7 @@
 .modal .modal-principal .modal-player .option {
   display: flex;
   gap: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   cursor: pointer;
 }
 .modal .modal-principal .modal-player .option .player {
@@ -129,6 +129,9 @@
 }
 .modal .modal-principal .hidden {
   display: none;
+}
+.modal .modal-principal .selected {
+  filter: drop-shadow(1px 1px 20px #c2313d);
 }
 
 @font-face {

@@ -35,29 +35,29 @@
             <img src="/img/zoro.png" alt="Zoro" class="zoro">
             <img src="/img/luffy.png" alt="Luffy" class="luffy">
 
-            <section class="modal-player " id="modalPlayer"> <!--active-->
+            <section class="modal-player active" id="modalPlayer"> <!--active-->
                 <h1 class="text">PRONTO PARA O DESAFIO?</h1>
 
-                <section class="game-menu selected" id="gameMenu">
-                    <section class="option" id="singlePlayer">
+                <section class="game-menu" id="gameMenu">
+                    <section class="option" id="option">
                         <section class="select">
-                            <img src="/img/caveira.png" alt="Caveira Pirata" class="select" id="selectSingle">
+                            <img src="/img/caveira.png" alt="Caveira Pirata" class="select" id="select">
                         </section>
                         <span class="single-player player" id="singlePlayer">SINGLE PLAYER</span>
                     </section>
-                    <section class="option" id="multiPlayer">
+                    <section class="option" id="option">
                         <section class="select">
-                            <img src="/img/caveira.png" alt="Caveira Pirata" class="select hidden" id="selectMulti">
+                            <img src="/img/caveira.png" alt="Caveira Pirata" class="select hidden" id="select">
                         </section>
                         <span class="multiplayer player" id="multiplayer">MULTIPLAYER</span>
                     </section>
                 </section>
             </section>
 
-            <section class="modal-login active"> <!--active-->
+            <section class="modal-login " id="modalLogin"> <!--active-->
                 <section class="input-container">
-                    <input type="text" class="input" placeholder="Jogador..." onfocus="true" maxlength="10">
-                    <input type="text" class="input hidden" placeholder="Jogador 2" onfocus="true" maxlength="10">
+                    <input type="text" class="input" id="inputJogador1" placeholder="Jogador..." onfocus="true" maxlength="10">
+                    <input type="text" class="input" id="inputJogador2" placeholder="Jogador 2" onfocus="true" maxlength="10">
                 </section>
 
                 <section class="nivel-container">
@@ -84,5 +84,5 @@
         </section>
     </section>
 </body>
-
+<script src="js/script.js"></script>
 </html>
