@@ -1,0 +1,66 @@
+@import 'padrao-cores';
+
+@font-face {
+    font-family: one-piece;
+    src: url(/fonts/one\ piece\ font.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-weight: bold;
+    //font-size: 80px;
+}
+
+.cenario-container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: $corPreto;
+    justify-content: center;
+    align-items: center;
+
+    .cenario {
+        position: relative;
+        width: 80%;
+        height: 100%;
+        overflow: hidden;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url('/img/mapa.jpg');
+        align-items: center;
+
+        .placar {
+            display: flex;
+            position: relative;
+            justify-content: center;
+            font-family:'one-piece';
+            font-size: 70px;
+            justify-content: space-around;
+
+            .box-jogador {
+                display: flex;
+                position: relative;
+                gap: 20px; 
+                width: 400px; 
+                justify-content: space-between; 
+        
+                .jogador {
+                    color: $corVermelho;
+                    width: 350px;
+                    text-align: left;
+                    overflow: hidden;
+                    white-space: nowrap; 
+                }
+        
+                .pontos {
+                    color: $corPreto;
+                    width: 60px; 
+                    text-align: right; 
+                }
+            }
+        }
+    }
+}
