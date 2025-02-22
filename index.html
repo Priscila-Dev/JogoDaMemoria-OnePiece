@@ -39,7 +39,7 @@
                 <h1 class="text">PRONTO PARA O DESAFIO?</h1>
 
                 <section class="game-menu" id="gameMenu">
-                    <section class="option" id="option">
+                    <section class="option selected" id="option">
                         <section class="select">
                             <img src="/img/caveira.png" alt="Caveira Pirata" class="select" id="select">
                         </section>
@@ -56,33 +56,37 @@
 
             <section class="modal-login " id="modalLogin"> <!--active-->
                 <section class="input-container">
-                    <input type="text" class="input" id="inputJogador1" placeholder="Jogador..." onfocus="true" maxlength="10">
-                    <input type="text" class="input" id="inputJogador2" placeholder="Jogador 2" onfocus="true" maxlength="10">
+                    <input type="text" class="input" id="inputJogador1" placeholder="Jogador..." onfocus="true"
+                        maxlength="10">
+                    <input type="text" class="input" id="inputJogador2" placeholder="Jogador 2" onfocus="true"
+                        maxlength="10">
                 </section>
 
                 <section class="nivel-container">
-                    <section class="nivel" id="nivelFacil">
+                    <section class="nivel disabled selected" id="nivel">
                         <section class="select">
-                            <img src="/img/caveira.png" alt="Caveira Pirata" class="select">
+                            <img src="/img/caveira.png" alt="Caveira Pirata" class="select" id="selectNivel">
                         </section>
-                            <span class="nivel-facil" id="facil">FÁCIL</span>
+                        <span class="botao" id="facil">FÁCIL</span>
                     </section>
-                    <section class="nivel" id="nivelMedio">
+                    <section class="nivel disabled" id="nivel">
                         <section class="select">
-                            <img src="/img/caveira.png" alt="Caveira Pirata" class="select hidden">
+                            <img src="/img/caveira.png" alt="Caveira Pirata" class="select hidden" id="selectNivel">
                         </section>
-                            <span class="nivel-medio" id="medio">MÉDIO</span>
+                        <span class="botao" id="medio">MÉDIO</span>
                     </section>
-                    <section class="nivel" id="nivelDificil">
+                    <section class="nivel disabled" id="nivel">
                         <section class="select">
-                            <img src="/img/caveira.png" alt="Caveira Pirata" class="select hidden">
+                            <img src="/img/caveira.png" alt="Caveira Pirata" class="select hidden" id="selectNivel">
                         </section>
-                            <span class="nivel-dificil" id="dificil">DIFÍCIL</span>
+                        <span class="botao" id="dificil">DIFÍCIL</span>
                     </section>
                 </section>
             </section>
         </section>
     </section>
+
+    <script src="js/script.js"></script>
 </body>
-<script src="js/script.js"></script>
+
 </html>

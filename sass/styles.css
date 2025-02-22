@@ -108,6 +108,7 @@
   background-color: #be8f58;
   filter: drop-shadow(1px 1px 20px #1A1A1A);
   font-family: "one-piece", "Times New Roman";
+  text-transform: uppercase;
   margin-top: 30px;
 }
 .modal .modal-principal .modal-login .nivel-container {
@@ -123,6 +124,11 @@
   margin-bottom: 20px;
   font-size: 40px;
   text-transform: uppercase;
+}
+.modal .modal-principal .modal-login .nivel-container .disabled {
+  pointer-events: none;
+  opacity: 0.5;
+  cursor: not-allowed;
 }
 .modal .modal-principal .modal-login .nivel-container .select {
   width: 50px;
