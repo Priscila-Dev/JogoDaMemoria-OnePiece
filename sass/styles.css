@@ -171,29 +171,36 @@
   align-items: center;
 }
 .cenario-container .cenario .placar {
-  display: flex;
   position: relative;
   justify-content: center;
   font-family: "one-piece";
   font-size: 70px;
+}
+.cenario-container .cenario .placar .singlePlayer {
+  display: flex;
+  padding: 5px;
   justify-content: space-around;
 }
-.cenario-container .cenario .placar .box-jogador {
+.cenario-container .cenario .placar .singlePlayer .box-jogador {
   display: flex;
   position: relative;
-  gap: 20px;
-  width: 400px;
-  justify-content: space-between;
 }
-.cenario-container .cenario .placar .box-jogador .jogador {
+.cenario-container .cenario .placar .singlePlayer .box-jogador .jogador {
   color: #c2313d;
   width: 350px;
   text-align: left;
-  overflow: hidden;
-  white-space: nowrap;
 }
-.cenario-container .cenario .placar .box-jogador .pontos {
-  color: #1A1A1A;
-  width: 60px;
-  text-align: right;
+.cenario-container .cenario .placar .multiplayer {
+  display: none;
+  padding: 5px 80px;
+  justify-content: space-between;
+}
+.cenario-container .cenario .placar .multiplayer .box-jogador {
+  display: flex;
+  position: relative;
+}
+.cenario-container .cenario .placar .multiplayer .box-jogador .jogador {
+  color: #c2313d;
+  width: 350px;
+  text-align: left;
 }/*# sourceMappingURL=styles.css.map */

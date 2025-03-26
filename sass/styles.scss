@@ -34,32 +34,42 @@
         align-items: center;
 
         .placar {
-            display: flex;
             position: relative;
             justify-content: center;
             font-family:'one-piece';
             font-size: 70px;
-            justify-content: space-around;
 
-            .box-jogador {
+            .singlePlayer {
                 display: flex;
-                position: relative;
-                gap: 20px; 
-                width: 400px; 
-                justify-content: space-between; 
-        
-                .jogador {
-                    color: $corVermelho;
-                    width: 350px;
-                    text-align: left;
-                    overflow: hidden;
-                    white-space: nowrap; 
+                padding: 5px;
+                justify-content: space-around;
+
+                .box-jogador {
+                    display: flex;
+                    position: relative;
+
+                    .jogador {
+                        color: $corVermelho;
+                        width: 350px;
+                        text-align: left;
+                    }
                 }
-        
-                .pontos {
-                    color: $corPreto;
-                    width: 60px; 
-                    text-align: right; 
+            }
+
+            .multiplayer {
+                display: none;
+                padding: 5px 80px;
+                justify-content: space-between;
+
+                .box-jogador {
+                    display: flex;
+                    position: relative;
+
+                    .jogador {
+                        color: $corVermelho;
+                        width: 350px;
+                        text-align: left;
+                    }
                 }
             }
         }
