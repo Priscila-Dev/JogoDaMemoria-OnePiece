@@ -70,7 +70,10 @@ const mostrarInput = () => {
     modalPlayer.classList.remove('active');
     modalLogin.classList.add('active');
 
-    if (selectedIndex === 0) {
+    // Atualiza a variável para indicar se é single ou multiplayer
+    isSinglePlayer = (selectedIndex === 0);
+
+    if (isSinglePlayer) {
         inputJogador2.classList.add('hidden');
         inputJogador1.focus();
     } else {
